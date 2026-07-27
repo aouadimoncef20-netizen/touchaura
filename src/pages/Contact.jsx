@@ -241,7 +241,7 @@ export default function Contact() {
               <p className="text-on-surface-variant mt-2 font-body">Discover daily inspirations and new arrivals.</p>
             </div>
             <a
-              href="#"
+              href="/"
               className="px-8 py-3 border border-primary text-primary font-body text-label-lg tracking-widest hover:bg-primary hover:text-white transition-all duration-500 uppercase"
             >
               Follow @ToucheAura

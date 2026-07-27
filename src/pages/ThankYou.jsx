@@ -196,7 +196,7 @@ export default function ThankYou() {
           Continue Shopping
         </Link>
         <a
-          href="#"
+          href="/"
           className="w-full md:w-auto px-12 py-5 bg-transparent border border-gold text-primary font-body text-label-lg uppercase tracking-widest hover:bg-gold/5 transition-all duration-300 active:scale-95 text-center"
         >
           Track My Order
@@ -211,16 +211,16 @@ export default function ThankYou() {
           Follow us for styling inspiration, exclusive collections, and special offers.
         </p>
         <div className="flex items-center justify-center gap-8">
-          <a href="#" className="group" aria-label="Instagram">
+          <a href="/" className="group" aria-label="Instagram">
             <FiCamera className="text-on-surface-variant group-hover:text-gold transition-colors duration-300" size={28} />
           </a>
-          <a href="#" className="group" aria-label="Facebook">
+          <a href="/" className="group" aria-label="Facebook">
             <FiFacebook className="text-on-surface-variant group-hover:text-gold transition-colors duration-300" size={28} />
           </a>
-          <a href="#" className="group" aria-label="TikTok">
+          <a href="/" className="group" aria-label="TikTok">
             <FiMusic className="text-on-surface-variant group-hover:text-gold transition-colors duration-300" size={28} />
           </a>
-          <a href="#" className="group" aria-label="WhatsApp">
+          <a href="/" className="group" aria-label="WhatsApp">
             <FiMessageCircle className="text-on-surface-variant group-hover:text-gold transition-colors duration-300" size={28} />
           </a>
         </div>

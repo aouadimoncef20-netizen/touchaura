@@ -295,14 +295,14 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="#"
+              href="/"
               className="flex items-center gap-3 border border-on-primary/40 px-10 py-5 font-body text-label-lg uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all duration-300"
             >
               <FiMessageCircle size={20} />
               WhatsApp Concierge
             </a>
             <a
-              href="#"
+              href="/"
               className="flex items-center gap-3 border border-on-primary/40 px-10 py-5 font-body text-label-lg uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all duration-300"
             >
               <FiCamera size={20} />

@@ -20,13 +20,13 @@ export default function Footer() {
             of perfection.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+            <a href="/" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
               <FiFacebook size={20} />
             </a>
-            <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+            <a href="/" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
               <FiInstagram size={20} />
             </a>
-            <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
+            <a href="/" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
               <FiYoutube size={20} />
             </a>
           </div>
@@ -39,13 +39,13 @@ export default function Footer() {
             <Link to="/about" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Our Story
             </Link>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Atelier
             </a>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Sustainability
             </a>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Journal
             </a>
           </nav>
@@ -55,16 +55,16 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <h5 className="font-body text-label-lg text-on-primary font-bold">Customer</h5>
           <nav className="flex flex-col gap-3">
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Shipping Policy
             </a>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Returns & Exchanges
             </a>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               Size Guide
             </a>
-            <a href="#" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
+            <a href="/" className="text-on-primary/70 font-body text-body-md hover:text-tertiary-fixed transition-colors duration-200">
               FAQ
             </a>
           </nav>
@@ -97,10 +97,10 @@ export default function Footer() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col md:flex-row justify-between items-center gap-4 opacity-50 font-body text-label-sm">
           <p>© 2026 Touche Aura. All rights reserved.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:opacity-100 transition-opacity">
+            <a href="/" className="hover:opacity-100 transition-opacity">
               Privacy Policy
             </a>
-            <a href="#" className="hover:opacity-100 transition-opacity">
+            <a href="/" className="hover:opacity-100 transition-opacity">
               Terms of Service
             </a>
           </div>

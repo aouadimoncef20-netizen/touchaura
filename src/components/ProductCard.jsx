@@ -11,7 +11,7 @@ import { formatPrice } from "../utils/format";
  * @param {number} index - Index for staggered animation
  */
 export default function ProductCard({ product, index = 0 }) {
-  const { id, name, category, price, originalPrice, rating, images, isNew, isSale, colors } = product;
+  const { id, name, price, originalPrice, rating, images, isNew, isSale, colors } = product;
 
   return (
     <motion.div
