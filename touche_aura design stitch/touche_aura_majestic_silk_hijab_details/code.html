@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Majestic Silk Hijab | Touche Aura</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f7f3f0",
+                        "surface-container-high": "#ebe7e4",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#ffdadb",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#d9c1c2",
+                        "surface-tint": "#97444f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#4e3d00",
+                        "surface": "#fdf9f6",
+                        "on-secondary-fixed-variant": "#7f2736",
+                        "primary-fixed-dim": "#ffb2b9",
+                        "primary-container": "#5b1623",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f1edea",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-background": "#1c1b1a",
+                        "background": "#fdf9f6",
+                        "inverse-primary": "#ffb2b9",
+                        "secondary": "#9e3e4c",
+                        "surface-dim": "#ddd9d6",
+                        "on-primary-fixed-variant": "#792d39",
+                        "on-primary-fixed": "#3f0110",
+                        "secondary-container": "#fd8896",
+                        "surface-bright": "#fdf9f6",
+                        "on-surface": "#1c1b1a",
+                        "inverse-surface": "#31302f",
+                        "tertiary-container": "#cba72f",
+                        "surface-container-highest": "#e5e2df",
+                        "on-surface-variant": "#544244",
+                        "on-secondary-fixed": "#40000f",
+                        "primary-fixed": "#ffdadc",
+                        "tertiary-fixed": "#ffe088",
+                        "on-secondary-container": "#761f2f",
+                        "on-primary-container": "#dc7b86",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "tertiary": "#735c00",
+                        "surface-variant": "#e5e2df",
+                        "secondary-fixed-dim": "#ffb2b9",
+                        "on-tertiary-fixed": "#241a00",
+                        "inverse-on-surface": "#f4f0ed",
+                        "outline": "#877273",
+                        "on-primary": "#ffffff",
+                        "primary": "#3e0110",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "gold": "#D4AF37",
+                        "burgundy": "#5B1623",
+                        "cream": "#F8F4F1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "element-gap": "16px",
+                        "container-max": "1280px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Poppins"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Poppins"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-sm": ["Poppins"],
+                        "body-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .zoom-container img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .zoom-container:hover img {
+            transform: scale(1.15);
+        }
+        .hairline-gold {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+        .ambient-glow {
+            box-shadow: 0 10px 40px -10px rgba(91, 22, 35, 0.08);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-active .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-active .rotate-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-burgundy selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto left-0 right-0">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary-fixed tracking-tighter" href="/">Touche Aura</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b border-primary/40 transition-colors duration-300" href="#">Shop</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:text-primary transition-colors duration-300"><span class="material-symbols-outlined">search</span></button>
+<button class="hover:text-primary transition-colors duration-300"><span class="material-symbols-outlined">favorite</span></button>
+<button class="hover:text-primary transition-colors duration-300"><span class="material-symbols-outlined">shopping_bag</span></button>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Main Product Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Images -->
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container zoom-container cursor-crosshair">
+<img alt="Main product" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvyh1V42bVcmEkZh8oOu4m8ye0aB7VfbsO-mlwuQyWDgP2pIGZITL69MH9QFky025UKl-a1YRKczDEATsR5KGCP1Ov1_FZnMFfaeAX6eHOfFAE_dzUP-LIgTfzm_-qGeK_GgEOC99tWkq8SVSAUrzjO4xR9rSkKsZjOV1y0eWO3Ii_FFARYD7_DAxftaaOL9bhVx4uMoqIrYmg72njdS-jSOfJz9mHeN2EDrbxozmSORM17KcCRlRC8dsw"/>
+</div>
+<div class="grid grid-cols-4 gap-4 mt-4">
+<button class="aspect-square bg-surface-container overflow-hidden hover:opacity-80 transition-opacity" onclick="changeMainImage('https://lh3.googleusercontent.com/aida/AP1WRLvyh1V42bVcmEkZh8oOu4m8ye0aB7VfbsO-mlwuQyWDgP2pIGZITL69MH9QFky025UKl-a1YRKczDEATsR5KGCP1Ov1_FZnMFfaeAX6eHOfFAE_dzUP-LIgTfzm_-qGeK_GgEOC99tWkq8SVSAUrzjO4xR9rSkKsZjOV1y0eWO3Ii_FFARYD7_DAxftaaOL9bhVx4uMoqIrYmg72njdS-jSOfJz9mHeN2EDrbxozmSORM17KcCRlRC8dsw')">
+<img alt="Thumbnail 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvyh1V42bVcmEkZh8oOu4m8ye0aB7VfbsO-mlwuQyWDgP2pIGZITL69MH9QFky025UKl-a1YRKczDEATsR5KGCP1Ov1_FZnMFfaeAX6eHOfFAE_dzUP-LIgTfzm_-qGeK_GgEOC99tWkq8SVSAUrzjO4xR9rSkKsZjOV1y0eWO3Ii_FFARYD7_DAxftaaOL9bhVx4uMoqIrYmg72njdS-jSOfJz9mHeN2EDrbxozmSORM17KcCRlRC8dsw"/>
+</button>
+<button class="aspect-square bg-surface-container overflow-hidden hover:opacity-80 transition-opacity" onclick="changeMainImage('https://lh3.googleusercontent.com/aida/AP1WRLsLbxB7SpJKyjgf_Chu3GPSh3swhZZWdPR4xHBktloTK_mMJq6ohX8FYhz_WAM8skPfAW8mwZHq35jszXJYKR55k2BoiASrIS0jchrvdaVBQf4NCB1x8ORlKL9w7DP9JLVgAzY6xJJ0KLDdoZRU-xIo-wG9zw6ziPqSd7Gxps3CRH6UT7HkyDIJ7trkdwrY4oGobj-wGaJ3XWZJ3CBkcjkVL-6JM1sb4eb4rTGj5fDQsSFqls6o08M-KJQ')">
+<img alt="Thumbnail 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsLbxB7SpJKyjgf_Chu3GPSh3swhZZWdPR4xHBktloTK_mMJq6ohX8FYhz_WAM8skPfAW8mwZHq35jszXJYKR55k2BoiASrIS0jchrvdaVBQf4NCB1x8ORlKL9w7DP9JLVgAzY6xJJ0KLDdoZRU-xIo-wG9zw6ziPqSd7Gxps3CRH6UT7HkyDIJ7trkdwrY4oGobj-wGaJ3XWZJ3CBkcjkVL-6JM1sb4eb4rTGj5fDQsSFqls6o08M-KJQ"/>
+</button>
+<button class="aspect-square bg-surface-container overflow-hidden hover:opacity-80 transition-opacity" onclick="changeMainImage('https://lh3.googleusercontent.com/aida/AP1WRLsxlK8fNe-C0ewx02xncP-kS2YwLdbwXB5GalN7sj58nUiN5JhGFdooXBZLWcP0MyHKmp-t6ioTk-ku1-cYIkqvi4nGqu3DuXz38X7MdtMbFdMMfI6GQgfp4Poykd68AMkppN-MwTZSlYmGuOkMsXrE6xpdamgOaP69Mqz8U8wrkAjqs-V5_iMdQqRi2eDrileT_DGMG0wy_1zEAXC2xyIJ_C4f4Pkk0PqPD-X6qTtMfiow7wcfq1CVX8Y')">
+<img alt="Thumbnail 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsxlK8fNe-C0ewx02xncP-kS2YwLdbwXB5GalN7sj58nUiN5JhGFdooXBZLWcP0MyHKmp-t6ioTk-ku1-cYIkqvi4nGqu3DuXz38X7MdtMbFdMMfI6GQgfp4Poykd68AMkppN-MwTZSlYmGuOkMsXrE6xpdamgOaP69Mqz8U8wrkAjqs-V5_iMdQqRi2eDrileT_DGMG0wy_1zEAXC2xyIJ_C4f4Pkk0PqPD-X6qTtMfiow7wcfq1CVX8Y"/>
+</button>
+<button class="aspect-square bg-surface-container overflow-hidden hover:opacity-80 transition-opacity" onclick="changeMainImage('https://lh3.googleusercontent.com/aida/AP1WRLtv5ow0sCGQo-af7Gg7Y4AV0i2HX_7zrKie3IlNvUMogYAScossAAyfUBthkJJ39aV929lyu3f4XQ_vC3-IDPtFHxyjhe1tii1cyW9nV7V7oKJB7jqYaXl8rE2tu-ZKw8ehX4v9dOX4EwsqwOW6ssB2orL_ZRz8Z_NFZB0a4PpSXwnGgRsU_FLD2rsck5pqJalb9-a9oXjrg45PBVZHrs_eKbCDSsWkUKSDhqBYQvDqxqZGnM3OKLrLrA')">
+<img alt="Thumbnail 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtv5ow0sCGQo-af7Gg7Y4AV0i2HX_7zrKie3IlNvUMogYAScossAAyfUBthkJJ39aV929lyu3f4XQ_vC3-IDPtFHxyjhe1tii1cyW9nV7V7oKJB7jqYaXl8rE2tu-ZKw8ehX4v9dOX4EwsqwOW6ssB2orL_ZRz8Z_NFZB0a4PpSXwnGgRsU_FLD2rsck5pqJalb9-a9oXjrg45PBVZHrs_eKbCDSsWkUKSDhqBYQvDqxqZGnM3OKLrLrA"/>
+</button>
+</div>
+</div>
+<!-- Right: Details -->
+<div class="lg:col-span-5 flex flex-col space-y-8">
+<header>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-burgundy">Majestic Silk Hijab</h1>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex text-gold">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-on-surface-variant">(128 Reviews)</span>
+</div>
+<p class="text-gold font-headline-md mt-4">$95.00</p>
+</header>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                    Premium chiffon hijab crafted with lightweight, breathable fabric for everyday elegance and special occasions. The subtle sheen and fluid drape provide a touch of royalty to your modest wardrobe.
+                </p>
+<!-- Color Selection -->
+<div>
+<h3 class="font-label-lg mb-4 text-burgundy">COLOR</h3>
+<div class="flex gap-4">
+<button class="w-8 h-8 rounded-full border-2 border-burgundy bg-burgundy ring-offset-2 ring-1 ring-burgundy/20" title="Deep Burgundy"></button>
+<button class="w-8 h-8 rounded-full border border-outline-variant bg-[#D4AF37]" title="Gold"></button>
+<button class="w-8 h-8 rounded-full border border-outline-variant bg-[#F8F4F1]" title="Cream"></button>
+<button class="w-8 h-8 rounded-full border border-outline-variant bg-[#EBE7E4]" title="Soft Beige"></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div>
+<h3 class="font-label-lg mb-4 text-burgundy">SIZE</h3>
+<div class="flex gap-3">
+<button class="w-12 h-12 flex items-center justify-center font-label-sm border border-gold/40 hover:border-burgundy hover:bg-burgundy hover:text-white transition-all">S</button>
+<button class="w-12 h-12 flex items-center justify-center font-label-sm border-2 border-burgundy bg-burgundy text-white">M</button>
+<button class="w-12 h-12 flex items-center justify-center font-label-sm border border-gold/40 hover:border-burgundy hover:bg-burgundy hover:text-white transition-all">L</button>
+</div>
+</div>
+<!-- Quantity & Add to Cart -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-6">
+<div class="flex items-center border border-gold/40 px-4 py-2">
+<button class="p-2 hover:text-burgundy"><span class="material-symbols-outlined">remove</span></button>
+<span class="px-6 font-body-md">1</span>
+<button class="p-2 hover:text-burgundy"><span class="material-symbols-outlined">add</span></button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-burgundy text-white py-4 font-label-lg tracking-[0.2em] uppercase hover:bg-primary-container transition-all ambient-glow">Add to Cart</button>
+<button class="border border-gold text-gold py-4 font-label-lg tracking-[0.2em] uppercase hover:bg-gold/5 transition-all">Buy Now</button>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 gap-y-4 pt-6 border-t border-gold/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold">verified</span>
+<span class="font-label-sm">Premium Quality</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold">local_shipping</span>
+<span class="font-label-sm">Fast Delivery</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold">lock_person</span>
+<span class="font-label-sm">Secure Checkout</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold">replay</span>
+<span class="font-label-sm">Easy Returns</span>
+</div>
+</div>
+<!-- Accordions -->
+<div class="space-y-0 pt-8">
+<div class="border-b border-gold/20 accordion-item">
+<button class="w-full py-4 flex justify-between items-center text-left" onclick="toggleAccordion(this)">
+<span class="font-label-lg text-burgundy">DESCRIPTION</span>
+<span class="material-symbols-outlined rotate-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-6 text-on-surface-variant font-body-md leading-relaxed">
+                                Our Majestic Silk Hijab is the pinnacle of luxury modest wear. Hand-finished edges and a premium silk blend ensure longevity and comfort.
+                            </div>
+</div>
+</div>
+<div class="border-b border-gold/20 accordion-item">
+<button class="w-full py-4 flex justify-between items-center text-left" onclick="toggleAccordion(this)">
+<span class="font-label-lg text-burgundy">FABRIC &amp; CARE</span>
+<span class="material-symbols-outlined rotate-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-6 text-on-surface-variant font-body-md leading-relaxed">
+                                • 100% Premium Chiffon Silk<br/>
+                                • Dry clean or hand wash only<br/>
+                                • Iron at low temperature
+                            </div>
+</div>
+</div>
+<div class="border-b border-gold/20 accordion-item">
+<button class="w-full py-4 flex justify-between items-center text-left" onclick="toggleAccordion(this)">
+<span class="font-label-lg text-burgundy">SHIPPING</span>
+<span class="material-symbols-outlined rotate-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="pb-6 text-on-surface-variant font-body-md leading-relaxed">
+                                Free domestic shipping on orders over $150. International shipping available via DHL Express.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- You May Also Like -->
+<section class="mt-section-gap reveal-on-scroll">
+<h2 class="font-headline-lg text-center mb-12 text-burgundy">You May Also Like</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img alt="Related Product 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsLbxB7SpJKyjgf_Chu3GPSh3swhZZWdPR4xHBktloTK_mMJq6ohX8FYhz_WAM8skPfAW8mwZHq35jszXJYKR55k2BoiASrIS0jchrvdaVBQf4NCB1x8ORlKL9w7DP9JLVgAzY6xJJ0KLDdoZRU-xIo-wG9zw6ziPqSd7Gxps3CRH6UT7HkyDIJ7trkdwrY4oGobj-wGaJ3XWZJ3CBkcjkVL-6JM1sb4eb4rTGj5fDQsSFqls6o08M-KJQ"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-lg">Silk Evening Abaya</h3>
+<p class="text-gold font-body-md mt-1">$240.00</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img alt="Related Product 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtv5ow0sCGQo-af7Gg7Y4AV0i2HX_7zrKie3IlNvUMogYAScossAAyfUBthkJJ39aV929lyu3f4XQ_vC3-IDPtFHxyjhe1tii1cyW9nV7V7oKJB7jqYaXl8rE2tu-ZKw8ehX4v9dOX4EwsqwOW6ssB2orL_ZRz8Z_NFZB0a4PpSXwnGgRsU_FLD2rsck5pqJalb9-a9oXjrg45PBVZHrs_eKbCDSsWkUKSDhqBYQvDqxqZGnM3OKLrLrA"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-lg">Minimalist Linen Abaya</h3>
+<p class="text-gold font-body-md mt-1">$185.00</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img alt="Related Product 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtArVhyPNEqwTtVk-Fjxiz43BgWDUluuerYX9iDCQ_cvXlDmWc6YvCzQlxPsoeR9weDeTd-DbMy4LjUdKe2OyI9L4c-vfiK33eDt-fmj4EGk4Qqrlf7dopAkTLV8ur3RFzXABKvSSLu_xlSGyWxWcGlf-wfIqxfxodMoZmZA1rx1WmEU2ci5xHv85iFT3wSoC_VRlpj1Paey_NweRNOt5-upx_ThOmuLFU9WE3Dv-DAlJfyVAKycveW_-8"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-lg">Embroidered Cream Abaya</h3>
+<p class="text-gold font-body-md mt-1">$210.00</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative">
+<img alt="Related Product 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsxlK8fNe-C0ewx02xncP-kS2YwLdbwXB5GalN7sj58nUiN5JhGFdooXBZLWcP0MyHKmp-t6ioTk-ku1-cYIkqvi4nGqu3DuXz38X7MdtMbFdMMfI6GQgfp4Poykd68AMkppN-MwTZSlYmGuOkMsXrE6xpdamgOaP69Mqz8U8wrkAjqs-V5_iMdQqRi2eDrileT_DGMG0wy_1zEAXC2xyIJ_C4f4Pkk0PqPD-X6qTtMfiow7wcfq1CVX8Y"/>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-label-lg">Golden Pin Set</h3>
+<p class="text-gold font-body-md mt-1">$35.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="mt-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop py-20 rounded-xl reveal-on-scroll">
+<h2 class="font-headline-lg text-center mb-16 text-burgundy">Whispers of Satisfaction</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-white p-8 ambient-glow relative">
+<div class="flex text-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic font-body-md text-on-surface-variant mb-6 leading-relaxed">"The drape is absolutely phenomenal. I've never felt silk this light yet substantial. Touche Aura truly understands modesty with grace."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A portrait of a sophisticated woman with a high-fashion editorial feel, looking directly at the camera with a calm and affluent expression. The lighting is soft and golden, highlighting her elegant features. The background is a minimalist, softly blurred boutique interior with cream and beige tones, perfectly matching the luxury minimalist aesthetic of Touche Aura." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvnPvkL0Eo2ndoV9b9MPadzSRInl9WucjvHIp8RPH56Wqx_yShIHnDrq4TKrXjQWQXP94uBfl7bc9yBAOunCn5R2OJmdn8YBxmSbUAxUKFduKSBeUTPEdgSyxRHOpGdL89jYyWAVLCnhq_SBlfaytoltWAwDMF7-WHAtQYRk-KJvPptd96p6znNJRC22XRg1dzLx4rBbTrN4wLTtEkxN44RiuLK6xRfX2LYmYxGecQ0mvlppMVlqQr"/>
+</div>
+<div>
+<p class="font-label-lg text-burgundy">Layla M.</p>
+<p class="font-label-sm text-on-surface-variant">Verified Buyer</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 ambient-glow relative md:translate-y-6">
+<div class="flex text-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic font-body-md text-on-surface-variant mb-6 leading-relaxed">"Shipping was surprisingly fast. The packaging alone feels like a luxury gift to oneself. The burgundy color is deep and rich."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A close-up profile shot of a young woman smiling warmly, capturing a moment of genuine joy and satisfaction. The photography is in a high-key, airy style with bright, natural lighting. Her skin tone is luminous, and the overall composition feels modern and exclusive. The background features subtle architectural lines in warm cream colors, consistent with a high-end editorial boutique look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0w0TmX1KO7PXW9HwYl5YSc7kqmBEMs5ePJ3Ek_U1h9vNpY3OVOPqoxL6pOcSCYLQMDOC4IjFwqbWsyhSDjqJ_iwPiljoBhsljm-W-db-v-rVO0QU8N16U1ImSQEpzjYj_rdCLeI9U8BDfIWrgG-JDikbG7eeP5arOToLV6LmPNb3psgAL3fS86LWcX72xzw6xv9T28argwHZEMHGhkmQ_vCVy67RNU31sO3r78TfFiQQQU9qtpbaI"/>
+</div>
+<div>
+<p class="font-label-lg text-burgundy">Sarah K.</p>
+<p class="font-label-sm text-on-surface-variant">Verified Buyer</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 ambient-glow relative">
+<div class="flex text-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic font-body-md text-on-surface-variant mb-6 leading-relaxed">"The pins are a perfect match. I'm so glad I found a brand that values details as much as I do. Definitely coming back for more colors."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A portrait of an elegant woman in her late 20s, exuding confidence and grace. She is photographed in a studio with soft, directional lighting that creates gentle shadows on a textured beige wall. Her expression is serene and welcoming. The overall aesthetic is one of luxury and high-end fashion, using a sophisticated color palette of creams and subtle burgundy accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNfFUzEa_Y1GgN0qfLyxsBWMDwgOqEGFAX2r2GkuY6elVHLbeTrl6198hc7U-iAvUbxVy_2ctyOI3f7I9JpauTrj3ryqxAzFOTnDU8lSgQNfXWVhj8RIW3Xa2elErhrYsySCfRLBkbr0xOC3GNJIGr0a1NPKAM37BSHWIlxGEinNUj_QCBv3UG0IChfh8Y-4j1zfJmtqkVV442KqZa2hPsE7IWqXykw80jJ-fQnuShzDLomNZpbyjL"/>
+</div>
+<div>
+<p class="font-label-lg text-burgundy">Amira H.</p>
+<p class="font-label-sm text-on-surface-variant">Verified Buyer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Styled by Our Community -->
+<section class="mt-section-gap reveal-on-scroll overflow-hidden">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-burgundy">Community Elegance</h2>
+<p class="font-body-md text-on-surface-variant">Styled by you, inspired by us. Tag @ToucheAura to be featured.</p>
+</div>
+<button class="font-label-lg text-gold border-b border-gold pb-1 tracking-wider uppercase">View Gallery</button>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="flex-none w-72 h-96 snap-start bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A stylish Instagram-style flat lay of a burgundy silk hijab artistically draped over a minimal cream marble surface, accompanied by a luxury fragrance bottle and gold jewelry. The lighting is soft and directional, casting elegant long shadows. The color palette is composed of rich burgundy, creamy whites, and golden accents, embodying a high-end lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOaUtOv6D9Cyqng0649Lft6B5VQgwri3rjRio5AtsyosD5d8NXmyD7_mDx4r0XKDpyr2bR3ocjfsNmTNnz6Yhb4SuaiYwTg44a1slZ4PPOhpvisYhd4TYVwAHzubU_N2yBvIiAHUKfGZFa-948TEesJU-m7gLRzGOxFBRWdNNRbcdFK4DXrwEecc4mHiwdU_HlxqzQ6iO8DFR3n3CXoJbcu30lyGMxu61Jy4tgwD2CW9Ksnyswb_XS"/>
+</div>
+<div class="flex-none w-72 h-96 snap-start bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A high-fashion street style shot of a woman elegantly wearing a cream abaya and burgundy hijab, walking through a modern architectural space with arched doorways. The warm late afternoon sun creates a high-contrast editorial look. The mood is affluent and serene, with a focus on the fluid movement of the premium fabrics. Colors are strictly limited to the brand's palette of creams, beiges, and deep burgundy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBygd-quMYHhdVyOTODWhPPiZ4RmcIm1jeLRnvULPqXc46UljVFk21fd-x9nBkTXnQmyKHFGiZR4Q1pKk1Z9GHilVlwqGsyRfCZ506hg05kcoTssPAsYyv1SblsQtfqz9PRyVv3fLwrcT86EFz_1sRA9y8HHDb4YIc1NBBvQW6SRF4enEWZrVSazwxHUfnZcGGJpv8B5eh9D_doatY6aoNyK0G0qUC5HTZ3wMAYi-sXO5dQRQefR9dw"/>
+</div>
+<div class="flex-none w-72 h-96 snap-start bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A close-up aesthetic shot of hands holding a golden cup, with a deep burgundy silk fabric visible in the frame. The setting is a minimalist cafe with warm wooden textures and cream-colored walls. The lighting is cozy and intimate. The image captures a moment of affluent calm, perfectly reflecting the lifestyle of a Touche Aura customer. The textures are rich and detailed, emphasizing the quality of the materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkLZn6BY6AkM7dAcy6DhI4NL2ODhgAHqtH1VtCglYcGeETeWJuQCsk35Rk6UGof9-26xK8x56viLqLmjLSTkEo-bC2BPSORlqx2ztNQ7PqKglc_14frFfs0rCAF8d1CuYglSqAYkQe3-ydevGLv8EdOEmfxDa1kxVjruWEq0OIqb79kksUkkX59OTlBUv4EqDCDPLsv6JJw8P8QUSwyAdOAenC0YPLkpTpeBbo_RPiPEh5U4iPx3K1"/>
+</div>
+<div class="flex-none w-72 h-96 snap-start bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="An editorial portrait of a woman in a soft beige abaya standing in front of a textured sand-colored wall. The lighting is artistic and dramatic, highlighting the fine embroidery of the garment. She is wearing a matching hijab that drapes perfectly. The overall visual style is minimalist luxury, with a serene and sophisticated mood. The color palette is dominated by neutral earthy tones with a whisper of gold." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZoF4L6etfATI1_z0ihgtMQv_mOuKN5AJmsVe_WZ8s1heLyhshu3lwxO-ElXkXZhsSKXJ1o6wXmWplB-m4PzbhJaU_bRCYHlWnkAgYUsFG1CPVvzlRx-mrM148u0hKN1ZMqQb7H4WN-_Dvp3z3BThbP64klH103X1njmhxpagzbrbE34Uq9Jh9Ir4HOrtrzwDFLRLiPmk2h0iLkhwuGfUb7E9rs-SP9iBoTf-mM01eGZrB-Lq5i1Ww"/>
+</div>
+<div class="flex-none w-72 h-96 snap-start bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist flat lay of luxury fashion accessories, including a burgundy leather handbag, a gold-bound notebook, and a silk hijab in cream. The items are arranged on a light beige textured background that suggests high-end interior design. The lighting is soft and even, creating a bright, modern light-mode feel. The composition is clean and editorial, focusing on texture and color harmony." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTbu0neaL7hc3LKa7LY5chSLysJScCtGNuKDVZJo0-TU8nkjRfExEQj1Zwzx7iv5dd9IJlAhAWgQP9mefKVcfKHJ_er0QN2eZx1MghmGXpkIke-moFA-aD-Y5D1HrB6ZPhFx92UYPY0bX11ZMMA1x008KVnzyH7go4_aO9FawSmH9382hNmvaRecHtdwB27ubuSgLpt3uHTP_Juq36JtV-MqnPAq_DcAQXvJzv3uWELmDIAqMLCenH"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container font-body-md text-body-md w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary dark:text-on-primary-container mb-6">Touche Aura</h2>
+<p class="opacity-70 leading-relaxed max-w-xs">Elevating modest fashion through minimalist luxury and editorial precision.</p>
+</div>
+<div>
+<h4 class="font-label-lg mb-6 tracking-widest text-on-primary">COMPANY</h4>
+<ul class="space-y-4 opacity-70">
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Artisans</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg mb-6 tracking-widest text-on-primary">CUSTOMER</h4>
+<ul class="space-y-4 opacity-70">
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Shipping</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Returns</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg mb-6 tracking-widest text-on-primary">FOLLOW US</h4>
+<div class="flex gap-6">
+<a class="hover:text-tertiary-fixed transition-colors" href="#">Instagram</a>
+<a class="hover:text-tertiary-fixed transition-colors" href="#">Pinterest</a>
+<a class="hover:text-tertiary-fixed transition-colors" href="#">Facebook</a>
+</div>
+</div>
+</div>
+<div class="border-t border-on-primary/10 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4 opacity-70 font-label-sm">
+<span>© 2024 Touche Aura. All rights reserved.</span>
+<div class="flex gap-8">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        function toggleAccordion(element) {
+            const item = element.parentElement;
+            const isActive = item.classList.contains('accordion-active');
+            
+            // Close all others
+            document.querySelectorAll('.accordion-item').forEach(acc => {
+                acc.classList.remove('accordion-active');
+            });
+            
+            if (!isActive) {
+                item.classList.add('accordion-active');
+            }
+        }
+
+        function changeMainImage(src) {
+            const mainImg = document.querySelector('.zoom-container img');
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 300);
+        }
+
+        // Reveal on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+                nav.classList.add('bg-transparent');
+            }
+        });
+    </script>
+</body></html>

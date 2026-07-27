@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank You | Touche Aura</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdadb",
+                    "secondary": "#9e3e4c",
+                    "secondary-fixed-dim": "#ffb2b9",
+                    "on-surface-variant": "#544244",
+                    "on-primary-container": "#dc7b86",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#ddd9d6",
+                    "on-background": "#1c1b1a",
+                    "on-secondary-fixed": "#40000f",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-container-highest": "#e5e2df",
+                    "background": "#fdf9f6",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#241a00",
+                    "surface": "#fdf9f6",
+                    "on-secondary-container": "#761f2f",
+                    "surface-tint": "#97444f",
+                    "primary-container": "#5b1623",
+                    "primary-fixed-dim": "#ffb2b9",
+                    "primary-fixed": "#ffdadc",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#f1edea",
+                    "outline": "#877273",
+                    "tertiary-container": "#cba72f",
+                    "on-secondary-fixed-variant": "#7f2736",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#ebe7e4",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#4e3d00",
+                    "surface-variant": "#e5e2df",
+                    "inverse-primary": "#ffb2b9",
+                    "inverse-surface": "#31302f",
+                    "tertiary-fixed": "#ffe088",
+                    "on-primary-fixed-variant": "#792d39",
+                    "surface-bright": "#fdf9f6",
+                    "secondary-container": "#fd8896",
+                    "outline-variant": "#d9c1c2",
+                    "on-surface": "#1c1b1a",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f7f3f0",
+                    "inverse-on-surface": "#f4f0ed",
+                    "tertiary": "#735c00",
+                    "primary": "#3e0110",
+                    "on-primary-fixed": "#3f0110",
+                    "gold": "#D4AF37"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "element-gap": "16px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Poppins"],
+                    "body-lg": ["Poppins"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Poppins"],
+                    "headline-md": ["Playfair Display"],
+                    "label-sm": ["Poppins"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .gold-hairline {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+        .ambient-glow {
+            box-shadow: 0 10px 40px -10px rgba(62, 1, 16, 0.08);
+        }
+        .checkmark-circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke: #D4AF37;
+            fill: none;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+        .checkmark-check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            stroke: #D4AF37;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+        }
+        @keyframes stroke {
+            100% { stroke-dashoffset: 0; }
+        }
+        .success-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+            to { box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); }
+        }
+        .reveal-up {
+            animation: revealUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes revealUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed">
+<!-- Top Navigation (Shell suppressed for Focus Journey, but brand presence maintained) -->
+<header class="fixed top-0 w-full z-50 bg-transparent py-6 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex justify-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter">Touche Aura</h1>
+</header>
+<main class="min-h-screen pt-32 pb-section-gap">
+<!-- SUCCESS HERO SECTION -->
+<section class="flex flex-col items-center justify-center text-center px-margin-mobile mb-section-gap">
+<!-- Animated Checkmark -->
+<div class="relative w-32 h-32 mb-8 flex items-center justify-center rounded-full gold-hairline success-glow bg-white/50">
+<svg class="w-20 h-20" viewbox="0 0 52 52">
+<circle class="checkmark-circle" cx="26" cy="26" fill="none" r="25"></circle>
+<path class="checkmark-check" d="M14.1 27.2l7.1 7.2 16.7-16.8" fill="none"></path>
+</svg>
+</div>
+<div class="reveal-up" style="animation-delay: 0.2s;">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Thank You for Your Order!</h2>
+<p class="max-w-2xl mx-auto font-body-lg text-body-lg text-on-surface-variant">
+                    Your order has been successfully placed. We're excited to prepare your beautiful Touche Aura pieces and deliver them to you soon.
+                </p>
+</div>
+</section>
+<!-- ORDER SUMMARY CARD -->
+<section class="max-w-4xl mx-auto px-margin-mobile mb-section-gap reveal-up" style="animation-delay: 0.4s;">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 ambient-glow gold-hairline relative overflow-hidden">
+<!-- Background Decorative Detail -->
+<div class="absolute -top-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-gold">spa</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter relative z-10">
+<div>
+<div class="mb-8">
+<span class="text-label-sm uppercase tracking-widest text-on-surface-variant block mb-2">Order Information</span>
+<div class="flex justify-between border-b border-outline-variant/30 py-3">
+<span class="font-body-md">Order Number</span>
+<span class="font-label-lg text-primary">#TA-88291</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 py-3">
+<span class="font-body-md">Order Date</span>
+<span class="font-body-md">October 24, 2024</span>
+</div>
+<div class="flex justify-between py-3">
+<span class="font-body-md">Est. Delivery</span>
+<span class="font-body-md">3-5 Business Days</span>
+</div>
+</div>
+<div>
+<span class="text-label-sm uppercase tracking-widest text-on-surface-variant block mb-2">Payment</span>
+<div class="flex justify-between py-3">
+<span class="font-body-md">Method</span>
+<span class="font-body-md">Cash on Delivery</span>
+</div>
+</div>
+</div>
+<div class="md:pl-12 md:border-l border-outline-variant/30">
+<div class="mb-8">
+<span class="text-label-sm uppercase tracking-widest text-on-surface-variant block mb-2">Shipping Address</span>
+<p class="font-body-md text-on-surface mt-2 leading-relaxed">
+                                124 Elite Avenue,<br/>
+                                Paris, France
+                            </p>
+</div>
+<div class="pt-8 mt-8 border-t border-primary/10">
+<div class="flex justify-between items-end">
+<span class="font-headline-md text-primary">Total</span>
+<span class="font-display-lg-mobile md:text-display-lg-mobile text-primary">16,370 DZD</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT HAPPENS NEXT -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<h3 class="font-headline-md text-center text-primary mb-12">What Happens Next</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface p-8 rounded-lg gold-hairline hover:-translate-y-2 transition-transform duration-500 ease-out flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full flex items-center justify-center bg-surface-container mb-6">
+<span class="material-symbols-outlined text-gold text-3xl">inventory_2</span>
+</div>
+<h4 class="font-label-lg text-primary mb-3">We're Preparing Your Order</h4>
+<p class="font-body-md text-on-surface-variant">Our team is carefully selecting and packing your chosen pieces with the utmost care.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface p-8 rounded-lg gold-hairline hover:-translate-y-2 transition-transform duration-500 ease-out flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full flex items-center justify-center bg-surface-container mb-6">
+<span class="material-symbols-outlined text-gold text-3xl">local_shipping</span>
+</div>
+<h4 class="font-label-lg text-primary mb-3">Your Order Will Be Shipped Soon</h4>
+<p class="font-body-md text-on-surface-variant">Once dispatched, you'll receive a tracking number to follow your luxury package's journey.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-8 rounded-lg gold-hairline hover:-translate-y-2 transition-transform duration-500 ease-out flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full flex items-center justify-center bg-surface-container mb-6">
+<span class="material-symbols-outlined text-gold text-3xl">favorite</span>
+</div>
+<h4 class="font-label-lg text-primary mb-3">Enjoy Your Touche Aura Collection</h4>
+<p class="font-body-md text-on-surface-variant">Wear your new modest pieces with confidence and elegance. We'd love to see your look!</p>
+</div>
+</div>
+</section>
+<!-- ACTION BUTTONS -->
+<section class="flex flex-col md:flex-row items-center justify-center gap-element-gap px-margin-mobile mb-section-gap">
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary font-label-lg uppercase tracking-widest hover:bg-primary/90 transition-all duration-300 hover:shadow-xl active:scale-95">
+                Continue Shopping
+            </button>
+<button class="w-full md:w-auto px-12 py-5 bg-transparent border border-gold text-primary font-label-lg uppercase tracking-widest hover:bg-gold/5 transition-all duration-300 active:scale-95">
+                Track My Order
+            </button>
+</section>
+<!-- SOCIAL SECTION -->
+<section class="max-w-4xl mx-auto text-center px-margin-mobile mb-section-gap">
+<div class="h-px w-24 bg-gold mx-auto mb-12"></div>
+<h3 class="font-headline-md text-primary mb-4">Stay Connected</h3>
+<p class="font-body-lg text-on-surface-variant mb-10">Follow us for styling inspiration, exclusive collections, and special offers.</p>
+<div class="flex items-center justify-center gap-8">
+<a class="group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-gold transition-colors duration-300 text-3xl">photo_camera</span>
+<span class="sr-only">Instagram</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-gold transition-colors duration-300 text-3xl">face_nod</span>
+<span class="sr-only">Facebook</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-gold transition-colors duration-300 text-3xl">music_note</span>
+<span class="sr-only">TikTok</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-gold transition-colors duration-300 text-3xl">chat</span>
+<span class="sr-only">WhatsApp</span>
+</a>
+</div>
+</section>
+</main>
+<!-- FOOTER (DATA:COMPONENTS:COMPONENTS_8) -->
+<footer class="w-full bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto font-body-md text-body-md">
+<!-- Brand Column -->
+<div class="opacity-90 hover:opacity-100 transition-opacity">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Touche Aura</h2>
+<p class="text-on-primary/70 mb-8">Refining modest luxury for the contemporary woman.</p>
+</div>
+<!-- Links Column 1 -->
+<div class="opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-4">
+<h4 class="font-bold text-on-primary mb-2">Company</h4>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">About Us</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Craftsmanship</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Sustainability</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Boutiques</a>
+</div>
+<!-- Links Column 2 -->
+<div class="opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-4">
+<h4 class="font-bold text-on-primary mb-2">Customer</h4>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Contact Support</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Shipping Info</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Returns &amp; Exchanges</a>
+<a class="text-on-primary/70 hover:text-tertiary-fixed transition-colors duration-200" href="#">Size Guide</a>
+</div>
+<!-- Follow Us -->
+<div class="opacity-90 hover:opacity-100 transition-opacity flex flex-col gap-4">
+<h4 class="font-bold text-on-primary mb-2">Follow Us</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-on-primary/20 hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-on-primary/20 hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-sm">face_nod</span>
+</a>
+</div>
+<div class="mt-8">
+<p class="text-on-primary/70 text-sm">© 2024 Touche Aura. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and scroll effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0)";
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>
